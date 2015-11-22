@@ -44,6 +44,14 @@
   <ItemGroup>
     <Compile Include="HVConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VHDManagement.cs" />
+    <Compile Include="VMGeneralManagement.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WMILibrary\WMILibrary.csproj">
+      <Project>{8201c7f4-07a6-4bd1-8837-88cd87849258}</Project>
+      <Name>WMILibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
