@@ -96,9 +96,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VMManagement\VMManagement.csproj">
-      <Project>{21dcf423-7797-4b76-8144-777b6fc04fd0}</Project>
-      <Name>VMManagement</Name>
+    <ProjectReference Include="..\..\..\..\..\..\tomis\Source\Repos\Hyper-V-API\VMManagement\VMManagement\HyperVManagement.csproj">
+      <Project>{8d4c3015-f976-44ad-8645-aaf92612df1c}</Project>
+      <Name>HyperVManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\tomis\Source\Repos\Hyper-V-API\VMManagement\WMILibrary\WMILibrary.csproj">
+      <Project>{8201c7f4-07a6-4bd1-8837-88cd87849258}</Project>
+      <Name>WMILibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

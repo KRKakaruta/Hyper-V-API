@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VMManagement", "VMManagement\VMManagement.csproj", "{21DCF423-7797-4B76-8144-777B6FC04FD0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleApp", "ExampleApp\ExampleApp.csproj", "{739A5FC2-DB32-45C3-AFF8-E150CB2B121B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyperVManagement", "..\..\..\..\..\tomis\Source\Repos\Hyper-V-API\VMManagement\VMManagement\HyperVManagement.csproj", "{8D4C3015-F976-44AD-8645-AAF92612DF1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WMILibrary", "..\..\..\..\..\tomis\Source\Repos\Hyper-V-API\VMManagement\WMILibrary\WMILibrary.csproj", "{8201C7F4-07A6-4BD1-8837-88CD87849258}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{21DCF423-7797-4B76-8144-777B6FC04FD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{21DCF423-7797-4B76-8144-777B6FC04FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{21DCF423-7797-4B76-8144-777B6FC04FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{21DCF423-7797-4B76-8144-777B6FC04FD0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{739A5FC2-DB32-45C3-AFF8-E150CB2B121B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{739A5FC2-DB32-45C3-AFF8-E150CB2B121B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{739A5FC2-DB32-45C3-AFF8-E150CB2B121B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{739A5FC2-DB32-45C3-AFF8-E150CB2B121B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D4C3015-F976-44AD-8645-AAF92612DF1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D4C3015-F976-44AD-8645-AAF92612DF1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D4C3015-F976-44AD-8645-AAF92612DF1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D4C3015-F976-44AD-8645-AAF92612DF1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8201C7F4-07A6-4BD1-8837-88CD87849258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8201C7F4-07A6-4BD1-8837-88CD87849258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8201C7F4-07A6-4BD1-8837-88CD87849258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8201C7F4-07A6-4BD1-8837-88CD87849258}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
