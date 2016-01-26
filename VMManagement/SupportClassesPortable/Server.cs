@@ -36,7 +36,7 @@ namespace SupportClassesPortable
 
         ServerType hypervisorType;
 
-        List<VirtualMachine> virtualMachines;
+        protected List<VirtualMachine> virtualMachines;
 
         public Server()
         {
@@ -93,7 +93,7 @@ namespace SupportClassesPortable
             return virtualMachines.FirstOrDefault((x => x.GetName().Equals(name)));
         }
 
-        public abstract void AddVirtualMachine(string name);
+        public abstract void AddVirtualMachine(VirtualMachine machine);
 
         public abstract VirtualMachine CreateVirtualMachine(string name);
         
