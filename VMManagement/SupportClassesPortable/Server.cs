@@ -21,6 +21,12 @@ namespace SupportClassesPortable
         void SetIPv4Address(string address, string gateway, int netMask);
         void SetIPV4Address(NetworkAddressIPv4 ip);
         void SetHypervisorType(ServerType type);
+        List<VirtualMachine> GetVirtualMachines();
+        VirtualMachine GetVirtualMachine(string name);
+        VirtualMachine CreateVirtualMachine(string name);
+        void DestroyVirtualMachine(VirtualMachine machine);
+        void MigrateVirtualMachine(VirtualMachine machine, IServer destination);
+        void UpdateVirtualMachineList();
     }
 
     public abstract class Server : IServer
@@ -29,6 +35,18 @@ namespace SupportClassesPortable
         NetworkAddressIPv4 IPv4Address;
 
         ServerType hypervisorType;
+
+        List<VirtualMachine> virtualMachines;
+
+        public Server()
+        {
+            this.virtualMachines = new List<VirtualMachine>();
+        }
+
+        public Server(string name) : this()
+        {
+            this.hostName = name;
+        }
 
         public void SetHostName(string name)
         {
@@ -64,5 +82,25 @@ namespace SupportClassesPortable
         {
             this.hypervisorType = type;
         }
+
+        public List<VirtualMachine> GetVirtualMachines()
+        {
+            return virtualMachines;
+        }
+
+        public VirtualMachine GetVirtualMachine(string name)
+        {
+            return virtualMachines.FirstOrDefault((x => x.GetName().Equals(name)));
+        }
+
+        public abstract void AddVirtualMachine(string name);
+
+        public abstract VirtualMachine CreateVirtualMachine(string name);
+        
+        public abstract void DestroyVirtualMachine(VirtualMachine machine);
+
+        public abstract void MigrateVirtualMachine(VirtualMachine machine, IServer destination);
+
+        public abstract void UpdateVirtualMachineList();
     }
 }

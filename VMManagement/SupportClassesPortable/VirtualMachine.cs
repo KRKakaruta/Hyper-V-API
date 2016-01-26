@@ -16,5 +16,10 @@ namespace SupportClassesPortable
             this.name = name;
             this.Server = server;
         }
+
+        public string GetName()
+        {
+            return name;
+        }
     }
 }
