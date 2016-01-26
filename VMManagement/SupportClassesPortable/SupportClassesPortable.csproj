@@ -38,8 +38,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Networking\IPv4.cs" />
-    <Compile Include="Networking\IPv6.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Server.cs" />
+    <Compile Include="VirtualMachine.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
